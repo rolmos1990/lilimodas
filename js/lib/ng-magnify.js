@@ -11,7 +11,7 @@
       replace: true,
       template: '<div class="magnify-container" data-ng-style="getContainerStyle()">' +
                   '<div class="magnify-glass" data-ng-style="getGlassStyle()"></div>' +
-                  '<img class="magnify-image" data-ng-src="{{ imageSrc }}_400.jpg"/>' +
+                  '<img class="magnify-image" data-ng-src="http://martinamodas.com/{{ imageSrc }}_400.jpg"/>' +
                 '</div>',
       scope: {
         imageSrc: '@',

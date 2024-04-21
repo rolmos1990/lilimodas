@@ -9,7 +9,7 @@ class Api extends CI_Controller {
         echo "MartinaModas API";
     }
     public function categorias(){
-        $this->load->model('m_site');
+        $this->load->model('m_sitea');
         $categorias=$this->m_site->get_categorias();
         echo json_encode($categorias);
     }

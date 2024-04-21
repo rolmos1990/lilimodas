@@ -22,7 +22,7 @@
                 }
 
                 scope.items.forEach(r => {
-                    slider.append('<a class="rotativo" href="#/' + r.enlace + '"><img src="catalogo/slider/' + scale + r.nombre + '"></a>');
+                    slider.append('<a class="rotativo" href="#/' + r.enlace + '"><img src="http://martinamodas.com/catalogo/slider/' + scale + r.nombre + '"></a>');
                 });
                 
                 $(element).append(slider);

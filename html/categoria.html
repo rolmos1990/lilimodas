@@ -1,7 +1,7 @@
 
 <!-- <preloader></preloader> -->
 <div class="container">
-    <img ng-src="catalogo/{{ categoria.id }}/config/encabezado.jpg" style="width:100%;">
+    <img ng-src="http://martinamodas.com/catalogo/{{ categoria.id }}/config/encabezado.jpg" style="width:100%;">
     <div class="row">
         <div class="col s6 l4 xl3" ng-repeat="producto in categoria.productos" id="{{ producto.codigo }}">
             <div class="card producto-lista" ng-click="categoria.abrirProducto(producto.codigo)">
@@ -21,7 +21,7 @@
                     font-weight: bold;
                 ">MÁS VENDIDO</div>
                 <div class="card-image">
-                    <img ng-src="catalogo/{{ producto.id_categoria }}/{{ producto.codigo }}_1_238.jpg">
+                    <img ng-src="http://martinamodas.com/catalogo/{{ producto.id_categoria }}/{{ producto.codigo }}_1_238.jpg">
                     <div class="estrella" ng-if="producto.promocion*1 > 0">
                         <i class="material-icons">star</i>
                     </div>

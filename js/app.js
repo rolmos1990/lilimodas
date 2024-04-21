@@ -1,7 +1,7 @@
 (function(){
 
     var app = angular.module('app',['ngRoute','preloader','rotativos','testimonios','zoom','api']);
-    var apiUrl = 'api/';
+    var apiUrl = 'http://www.martinamodas.com/api/';
 
     /*Rutas*/
     app.config(function($routeProvider){
@@ -44,7 +44,7 @@
             email: '',
             registrar: function(){
                 api.request({
-                    url: 'promociones',
+                    url: apiUrl +'promociones',
                     method: 'post',
                     data: {email: app.promociones.email},
                     success: function(){
@@ -215,7 +215,7 @@
 
         testimonios.enviar = function(){
             api.request({
-                url: 'testimonios',
+                url: apiUrl +'testimonios',
                 method: 'post',
                 data: testimonios.nuevo,
                 success: function(){

@@ -5,7 +5,7 @@
     </nav>
     <div>
         <div class="novedad" ng-repeat="n in novedades.lista">
-            <div class="imagen"><img ng-src="catalogo/novedades/{{n.id}}.jpg"></div>
+            <div class="imagen"><img ng-src="http://martinamodas.com/catalogo/novedades/{{n.id}}.jpg"></div>
             <h4>{{ n.titulo }}</h4>
             <div class="opciones">
                 <span ng-click="app.ir('novedades/' + n.id)">

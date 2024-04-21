@@ -6,7 +6,7 @@
     </nav>
     <ul id="imagenes">
         <li>
-            <img class="foto" ng-show="producto.data.imagenes.viejas[0] && producto.data.imagenes.nuevas[0] === null" ng-src="catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_1_238.jpg?{{producto.data.fecha}}">
+            <img class="foto" ng-show="producto.data.imagenes.viejas[0] && producto.data.imagenes.nuevas[0] === null" ng-src="http://martinamodas.com/catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_1_238.jpg?{{producto.data.fecha}}">
             <img class="foto" ng-show="producto.data.imagenes.nuevas[0] !== null" ngf-thumbnail="producto.data.imagenes.nuevas[0]">
             <div class="opciones" ng-show="producto.data.imagenes.viejas[0] || producto.data.imagenes.nuevas[0] !== null">
                 <span ng-click="producto.seleccionar(1)">
@@ -21,7 +21,7 @@
             </span>
         </li><!--
         --><li>
-            <img class="foto" ng-show="producto.data.imagenes.viejas[1] && producto.data.imagenes.nuevas[1] === null" ng-src="catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_2_238.jpg?{{producto.data.fecha}}">
+            <img class="foto" ng-show="producto.data.imagenes.viejas[1] && producto.data.imagenes.nuevas[1] === null" ng-src="http://martinamodas.com/catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_2_238.jpg?{{producto.data.fecha}}">
             <img class="foto" ng-show="producto.data.imagenes.nuevas[1] !== null" ngf-thumbnail="producto.data.imagenes.nuevas[1]">
             <div class="opciones" ng-show="producto.data.imagenes.viejas[1] || producto.data.imagenes.nuevas[1] !== null">
                 <span ng-click="producto.seleccionar(2)">
@@ -36,7 +36,7 @@
             </span>
         </li><!--
         --><li>
-            <img class="foto" ng-show="producto.data.imagenes.viejas[2] && producto.data.imagenes.nuevas[2] === null" ng-src="catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_3_238.jpg?{{producto.data.fecha}}">
+            <img class="foto" ng-show="producto.data.imagenes.viejas[2] && producto.data.imagenes.nuevas[2] === null" ng-src="http://martinamodas.com/catalogo/{{producto.data.idCategoria}}/{{producto.data.codigo}}_3_238.jpg?{{producto.data.fecha}}">
             <img class="foto" ng-show="producto.data.imagenes.nuevas[2] !== null" ngf-thumbnail="producto.data.imagenes.nuevas[2]">
             <div class="opciones" ng-show="producto.data.imagenes.viejas[2] || producto.data.imagenes.nuevas[2] !== null">
                 <span ng-click="producto.seleccionar(3)">

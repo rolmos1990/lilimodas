@@ -48,7 +48,6 @@
         
         <?php if($zendesk_chat){ ?>
         <!-- Start of  Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=42f54ea8-a492-4808-92d7-ad084c3e5bbb"> </script>
         <!-- End of  Zendesk Widget script -->
         <?php } ?>
     </head>
@@ -62,9 +61,9 @@
                         <span><img src="img/bandera.png" /> Buenos Aires - Argentina</span>
                     </div>
                     <div class="right hide-on-med-and-down">
-                        <a href="https://facebook.com/martinamodasarg" target="_blank"><img src="img/fb.png" />Martina Modas</a>
-                        <a href="https://instagram.com/martinamodasarg" target="_blank"><img src="img/in.png" />MartinaModasArg</a>
-                        <a href="http://api.whatsapp.com/send?phone=54{{ app.whatsapp }}" target="_blank"><img src="img/wa.png" />{{ app.whatsapp }}</a>
+                        <a href="https://facebook.com/lilicardenasmodas" target="_blank"><img src="img/fb.png" />Lili Cardenas Modas</a>
+                        <a href="https://instagram.com/lilicardenasmodasargentina" target="_blank"><img src="img/in.png" />LiliCardenasModasArgentina</a>
+                        <a href="http://api.whatsapp.com/send?phone=541162545651" target="_blank"><img src="img/wa.png" />+541162545651</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +80,7 @@
                         </a>
 
                         <a href="#/" class="brand-logo center">
-                            <img src="img/logo_blanco.png" alt="logo_blanco">
+                            <img src="img/logo_blanco2.png" alt="logo_blanco">
                         </a>
 
                         <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -110,7 +109,7 @@
                 <div class="container">
                     <div class="menu-item" ng-repeat="c in app.menu.categorias track by $index" style="width: auto; padding: 5px 10px;">
                         <a href="#/{{ c.nombre_url }}" ng-class="{'active': app.rutaActual() == '/' + c.nombre_url}">
-                            <img ng-src="catalogo/{{ c.id }}/config/icono.png">
+                            <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">
                             <span>{{ c.nombre }}</span>
                         </a>
                     </div>
@@ -130,7 +129,7 @@
         <ul class="sidenav" id="mobile-menu">
             <li ng-repeat="c in app.menu.categorias">
                 <a href="#/{{ c.nombre_url }}" class="waves-effect waves-light">
-                    <img ng-src="catalogo/{{ c.id }}/config/icono.png">{{ c.nombre }}
+                    <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">{{ c.nombre }}
                 </a>
             </li>
             <li>
@@ -153,9 +152,9 @@
                     <div class="col l4 m6 s12 redes">
                         <h5 class="white-text">Redes sociales</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="https://facebook.com/martinamodasarg" target="_blank"><img src="img/fb.png" />Martina Modas</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://instagram.com/martinamodasarg" target="_blank"><img src="img/in.png" />MartinaModasArg</a></li>
-                            <li><a class="grey-text text-lighten-3" href="http://api.whatsapp.com/send?phone=54{{ app.whatsapp }}" target="_blank"><img src="img/wa.png" />{{ app.whatsapp }}</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://facebook.com/martinamodasarg" target="_blank"><img src="img/fb.png" />Lili Cardenas Modas</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://instagram.com/martinamodasarg" target="_blank"><img src="img/in.png" />LiliCardenasModasArgentina</a></li>
+                            <li><a class="grey-text text-lighten-3" href="http://api.whatsapp.com/send?phone=541162545651" target="_blank"><img src="img/wa.png" />541162545651</a></li>
                         </ul>
                     </div>
                     <div class="col l4 m6 s12 testimonios">
@@ -183,7 +182,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                © 2019 Martina Modas
+                © 2024 Lili Cardenas Modas
                 </div>
             </div>
         </footer>
@@ -191,10 +190,6 @@
         <div class="sticky left hide-on-small-only">
             <a class="waves-effect waves-light btn grey" href="#/testimonios"><i class="material-icons left">people</i> Testimonios</a>
         </div>
-        <div class="hide-on-med-and-up" style="position:fixed; top: 40%; right: 10px; z-index: 10;">
-			<a ng-href="http://api.whatsapp.com/send?phone=54{{ app.whatsapp }}"><img src="img/boton_wa.svg" width="50" height="50"></a>
-		</div>
-                
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="js/lib/jquery.min.js"></script>
         <script type="text/javascript" src="js/lib/Drift.js"></script>

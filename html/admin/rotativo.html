@@ -6,7 +6,7 @@
     </nav>
     <div ui-sortable="rotativo.ordenar" ng-model="rotativo.lista">
         <div class="imagen-rotativa" ng-repeat="i in rotativo.lista">
-            <img ng-src="catalogo/slider/{{ i.nombre }}" alt="{{ i.nombre }}" />
+            <img ng-src="http://martinamodas.com/catalogo/slider/{{ i.nombre }}" alt="{{ i.nombre }}" />
             <select ng-change="rotativo.cambiarEnlace(i.nombre,i.enlace)" ng-model="i.enlace">
                 <option value="como-comprar" ng-selected="i.enlace === 'como-comprar'">Cómo comprar</option>
                 <option ng-repeat="c in rotativo.categorias" value="{{ rotativo.nombreCategoria(c) }}" ng-selected="i.enlace === rotativo.nombreCategoria(c)">{{ c.nombre }}</option>

@@ -5,7 +5,7 @@
     /*Rutas*/
     app.config(function($routeProvider){
         $routeProvider.
-            when('/login',{templateUrl:'html/admin/login.html',controller:'loginController',controllerAs:'login'}).
+            //when('/login',{templateUrl:'html/admin/login.html',controller:'loginController',controllerAs:'login'}).
             when('/categorias',{templateUrl:'html/admin/categorias.html',controller:'categoriasController',controllerAs:'categorias'}).
             when('/categoria/:categoria',{templateUrl:'html/admin/categoria.html?201808250935',controller:'categoriaController',controllerAs:'categoria'}).
             when('/categoria/:categoria/:producto',{templateUrl:'html/admin/producto.html',controller:'productoController',controllerAs:'producto'}).

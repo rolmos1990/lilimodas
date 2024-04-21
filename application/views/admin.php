@@ -2,7 +2,7 @@
     <head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>MartinaModas - Administración</title>
+        <title>LiliCardenasModas - Administración</title>
         <link rel="stylesheet" href="css/admin/estilo.css">
         <link rel="stylesheet" href="css/ngDialog.css">
         <link rel="stylesheet" href="css/ngDialog-theme-default.css">

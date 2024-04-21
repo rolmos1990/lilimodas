@@ -13,11 +13,11 @@
         </div>
         <div class="col s12 m6">
             <div class="imagenes">
-                <div class="grande">
-                    <img id="zoom-img" ng-src="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_400.jpg" width="100%" data-zoom="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_800.jpg" drift>
+                <div class="sgrande">
+                    <img id="zoom-img" ng-src="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_400.jpg" width="100%" data-zoom="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_800.jpg" drift>
                 </div>
                 <div class="mini">
-                    <img ng-src="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ $index+1 }}_67.jpg" 
+                    <img ng-src="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ $index+1 }}_67.jpg"
                         width="30"
                         ng-repeat="i in producto.data.imagen track by $index"
                         ng-if="i"
@@ -40,8 +40,8 @@
             <h4>
                 Código: {{ producto.data.codigo }}
                 <div class="right" style="display: flex">
-                    <a ng-href="http://api.whatsapp.com/send?phone=54{{ app.whatsapp }}&amp;text=Hola%21%21%21" target="_blank"><i class="icon-whatsapp social"></i></a>
-                    <a href="https://instagram.com/martinamodasarg" target="_blank"><i class="icon-instagram social"></i></a>
+                    <a ng-href="http://api.whatsapp.com/send?phone=541162545651&amp;text=Hola%21%21%21" target="_blank"><i class="icon-whatsapp social"></i></a>
+                    <a href="https://instagram.com/lilicardenasmodasargentina" target="_blank"><i class="icon-instagram social"></i></a>
                     <i class="material-icons gusta" ng-click="producto.gustar(1)" ng-hide="producto.gusta">favorite_border</i>
                     <i class="material-icons gusta" ng-click="producto.gustar(0)" ng-show="producto.gusta">favorite</i>
                 </div>
