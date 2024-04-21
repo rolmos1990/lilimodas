@@ -1,0 +1,15 @@
+<div class="ngdialog-message">
+    <p>Introduzca el monto del incremento/decremento porcentual a realizar</p>
+    <table>
+        <tr>
+            <td>Monto (%)</td>
+        </tr>
+        <tr>
+            <td><input style="height:40px;width:100px" class="ngdialog-input" type="number" min="-500" max="500" ng-model="dialog.incremento" /></td>
+        </tr>
+    </table>
+</div>
+<div class="ngdialog-buttons">
+    <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="confirm(dialog.incremento)">Si</button>
+    <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog('no')">No</button>
+</div>

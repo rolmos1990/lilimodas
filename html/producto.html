@@ -1,0 +1,76 @@
+<div class="container">
+    
+    <div class="row producto">
+        <div class="col s12">
+            <nav class="breadcrumbs">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                    <a href="" class="breadcrumb" ng-click="producto.regresar()">{{ producto.categoria.nombre }}</a>
+                    <a class="breadcrumb">{{ producto.data.tipo }} {{ producto.data.codigo }}</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col s12 m6">
+            <div class="imagenes">
+                <div class="grande">
+                    <img id="zoom-img" ng-src="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_400.jpg" width="100%" data-zoom="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_800.jpg" drift>
+                </div>
+                <div class="mini">
+                    <img ng-src="catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ $index+1 }}_67.jpg" 
+                        width="30"
+                        ng-repeat="i in producto.data.imagen track by $index"
+                        ng-if="i"
+                        ng-click="producto.imagen = $index+1"
+                        ng-class="{'activo': producto.imagen == $index+1}">
+                </div>
+                <div class="descuento" ng-show="producto.data.descuento*1" ng-if="!producto.data.descuento_especial*1">{{ producto.data.descuento }}% Descuento</div>
+                <div class="descuento" ng-show="producto.data.descuento_especial*1">{{ producto.data.descuento_especial }}% Descuento</div>
+            </div>
+        </div>
+        <div class="col s12 m6" id="zoom-container">
+            <h3>{{ producto.data.tipo }}</h3>
+            <div class="estrellas">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons" ng-show="producto.data.precio > 770">star</i>
+            </div>
+            <h4>
+                Código: {{ producto.data.codigo }}
+                <div class="right" style="display: flex">
+                    <a ng-href="http://api.whatsapp.com/send?phone=54{{ app.whatsapp }}&amp;text=Hola%21%21%21" target="_blank"><i class="icon-whatsapp social"></i></a>
+                    <a href="https://instagram.com/martinamodasarg" target="_blank"><i class="icon-instagram social"></i></a>
+                    <i class="material-icons gusta" ng-click="producto.gustar(1)" ng-hide="producto.gusta">favorite_border</i>
+                    <i class="material-icons gusta" ng-click="producto.gustar(0)" ng-show="producto.gusta">favorite</i>
+                </div>
+            </h4>
+            <span><cite>{{ producto.data.precio | currency }}</cite><b>{{ producto.data.precio_descuento | currency }}</b></span>
+            <h4>Tela / Material</h4>
+            <span>{{ producto.data.tela }}</span>
+            <h4 ng-if="producto.data.talla_unica">Talle UNICO, sirve para</h4>
+            <h4 ng-if="!producto.data.talla_unica">Talle</h4>
+            <div class="chip" ng-repeat="p in producto.data.tallas.split(' ') track by $index">
+                {{ p }}
+            </div>
+
+            <div ng-if="producto.cargandoDisponibilidad">
+                <h4>Disponibilidad</h4>
+                <div class="progress">
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+            
+            <h4>Disponibilidad</h4>
+            <table ng-repeat="(t,colores) in producto.data.disponibilidad">
+                <tr>
+                    <th>TALLE {{ t }}</th>
+                </tr>
+                <tr>
+                    <td ng-repeat="c in colores">{{ c.color }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+
+<!-- <preloader></preloader> -->
+<div class="container">
+    <img ng-src="catalogo/{{ categoria.id }}/config/encabezado.jpg" style="width:100%;">
+    <div class="row">
+        <div class="col s6 l4 xl3" ng-repeat="producto in categoria.productos" id="{{ producto.codigo }}">
+            <div class="card producto-lista" ng-click="categoria.abrirProducto(producto.codigo)">
+                <div
+                    ng-show="producto.masVendido"
+                    style="
+                    position: relative;
+                    top: 10px;
+                    z-index: 10;
+                    float: right;
+                    margin-right: 10px;
+                    background-color: #FF7733;
+                    color: White;
+                    border-radius: 5px;
+                    padding: 4px;
+                    font-size: 12px;
+                    font-weight: bold;
+                ">MÁS VENDIDO</div>
+                <div class="card-image">
+                    <img ng-src="catalogo/{{ producto.id_categoria }}/{{ producto.codigo }}_1_238.jpg">
+                    <div class="estrella" ng-if="producto.promocion*1 > 0">
+                        <i class="material-icons">star</i>
+                    </div>
+                    <div class="ver-detalles"><span>VER TALLES</span></div>
+                    <div class="descuento" ng-show="producto.descuento*1" ng-if="!producto.descuento_especial*1">{{ producto.descuento }}% Descuento</div>
+                    <div class="descuento" ng-show="producto.descuento_especial*1">{{ producto.descuento_especial }}% Descuento</div>
+                </div>
+                <div class="card-content">
+                    <span class="card-title codigo">
+                        <label>{{ producto.tipo }}</label>
+                        <b>{{ producto.codigo }}</b>
+                    </span>
+                    <div class="precio">
+                        <cite>{{ producto.precio | currency }}</cite><b>{{ producto.precio_descuento | currency}}</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

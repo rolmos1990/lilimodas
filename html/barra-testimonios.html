@@ -1,0 +1,11 @@
+<div class="barra-testimonio" ng-show="testimonios.data.id">
+    <div class="avatar">
+        <img ng-if="testimonios.data.foto*1" ng-src="catalogo/testimonios/{{ testimonios.data.id }}.jpg" alt="" class="circle">
+        <img ng-if="!(testimonios.data.foto*1)" src="img/avatar-testimonios.png" alt="" class="circle">
+    </div>
+    <div class="contenido">
+        <b>{{ testimonios.data.nombre }} <i class="material-icons" ng-repeat="x in [].constructor(5) track by $index">star</i></b>
+        <br>
+        <span>{{ testimonios.data.comentario }}</span>
+    </div>
+</div>

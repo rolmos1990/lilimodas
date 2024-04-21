@@ -1,0 +1,16 @@
+<rotativos items="inicio.rotativos" ng-if="inicio.rotativos.length > 0"></rotativos>
+<h5 class="header">
+    <span>Nuevos Productos</span>
+</h5>
+<div class="container">
+    <div class="row">
+        <div class="col s6 l4" ng-repeat="c in inicio.categorias">
+            <div class="card categoria-lista" ng-click="inicio.abrirCategoria(c.nombre_url)">
+                <div class="card-image">
+                    <img ng-src="catalogo/{{ c.id }}/config/portada.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

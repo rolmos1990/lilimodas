@@ -1,0 +1,22 @@
+<section id="rotativo">
+    <h1>Rotativo {{ rotativo.tipo }}</h1>
+    <nav>
+        <input type="file" id="nueva-imagen" ngf-select="rotativo.subir($file)" ngf-accept="'image/jpeg'">
+        <span ng-click="rotativo.seleccionar()">Nueva imagen</span>
+    </nav>
+    <div ui-sortable="rotativo.ordenar" ng-model="rotativo.lista">
+        <div class="imagen-rotativa" ng-repeat="i in rotativo.lista">
+            <img ng-src="catalogo/slider/{{ i.nombre }}" alt="{{ i.nombre }}" />
+            <select ng-change="rotativo.cambiarEnlace(i.nombre,i.enlace)" ng-model="i.enlace">
+                <option value="como-comprar" ng-selected="i.enlace === 'como-comprar'">Cómo comprar</option>
+                <option ng-repeat="c in rotativo.categorias" value="{{ rotativo.nombreCategoria(c) }}" ng-selected="i.enlace === rotativo.nombreCategoria(c)">{{ c.nombre }}</option>
+            </select>
+            <div class="opciones">
+                <span ng-click="rotativo.eliminar(i)">
+                    <img src="img/admin/eliminar.png" />
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="cargando" ng-show="rotativo.cargando"></div>
+</section>
