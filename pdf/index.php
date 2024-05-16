@@ -1,6 +1,6 @@
 <?php
 $id_categoria = $_GET['categoria'];
-$json = file_get_contents('http://www.martinamodas.com/api/productos/' . $id_categoria);
+$json = file_get_contents('http://martinamodas.com/api/productos/' . $id_categoria);
 $productos = json_decode($json);
 ?>
 <html>

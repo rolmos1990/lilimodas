@@ -234,18 +234,18 @@
         this.pdf = function(info){
             var id = $routeParams.categoria;
             if(info){
-                url = 'http%3A%2F%2Fwww.martinamodas.com%2Fpdf%2Findex.php%3Fcategoria%3D'+id;
+                url = 'http%3A%2F%2Fmartinamodas.com%2Fpdf%2Findex.php%3Fcategoria%3D'+id;
             }else{
-                url = 'http%3A%2F%2Fwww.martinamodas.com%2Fpdf%2Findex2.php%3Fcategoria%3D'+id;
+                url = 'http%3A%2F%2Fmartinamodas.com%2Fpdf%2Findex2.php%3Fcategoria%3D'+id;
             }
         	window.open('https://lucypdf.appspot.com/?url='+url+'&format=Legal');
         };
         this.pdfWeb = function(info){
             var id = $routeParams.categoria;
             if(info){
-                url = 'http://www.martinamodas.com/pdf/index.php?categoria='+id;
+                url = 'http://martinamodas.com/pdf/index.php?categoria='+id;
             }else{
-                url = 'http://www.martinamodas.com/pdf/index2.php?categoria='+id;
+                url = 'http://martinamodas.com/pdf/index2.php?categoria='+id;
             }
         	window.open(url+'&format=Legal');
         };
