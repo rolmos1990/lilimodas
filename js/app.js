@@ -1,7 +1,7 @@
 (function(){
 
     var app = angular.module('app',['ngRoute','preloader','rotativos','testimonios','zoom','api']);
-    var apiUrl = 'http://www.martinamodas.com/api/';
+    var apiUrl = 'https://www.martinamodas.com/api/';
 
     /*Rutas*/
     app.config(function($routeProvider){

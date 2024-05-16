@@ -35,13 +35,13 @@
         </div><!--
         --><div class="portada" ng-click="novedad.seleccionar('portada')">
             <label>Portada (238 x 238)</label>
-            <img ng-src="http://martinamodas.com/catalogo/novedades/{{novedad.data.id}}.jpg" ng-hide="novedad.data.nuevaPortada">
+            <img ng-src="https://martinamodas.com/catalogo/novedades/{{novedad.data.id}}.jpg" ng-hide="novedad.data.nuevaPortada">
             <img class="foto" ng-show="novedad.data.nuevaPortada" ngf-thumbnail="novedad.data.nuevaPortada">
             <input type="file" id="imagen-portada" name="portada" ng-model="novedad.data.nuevaPortada" ngf-select ngf-accept="image/jpeg">
         </div><!--
         --><div class="encabezado" ng-click="novedad.seleccionar('encabezado')">
             <label>Encabezado</label>
-            <img ng-src="http://martinamodas.com/catalogo/novedades/{{novedad.data.id}}-1.jpg" ng-hide="novedad.data.nuevoEncabezado">
+            <img ng-src="https://martinamodas.com/catalogo/novedades/{{novedad.data.id}}-1.jpg" ng-hide="novedad.data.nuevoEncabezado">
             <img class="foto" ng-show="novedad.data.nuevoEncabezado" ngf-thumbnail="novedad.data.nuevoEncabezado">
             <input type="file" id="imagen-encabezado" name="encabezado" ng-model="novedad.data.nuevoEncabezado" ngf-select ngf-accept="image/jpeg">
         </div>

@@ -109,7 +109,7 @@
                 <div class="container">
                     <div class="menu-item" ng-repeat="c in app.menu.categorias track by $index" style="width: auto; padding: 5px 10px;">
                         <a href="#/{{ c.nombre_url }}" ng-class="{'active': app.rutaActual() == '/' + c.nombre_url}">
-                            <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">
+                            <img ng-src="https://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">
                             <span>{{ c.nombre }}</span>
                         </a>
                     </div>
@@ -129,7 +129,7 @@
         <ul class="sidenav" id="mobile-menu">
             <li ng-repeat="c in app.menu.categorias">
                 <a href="#/{{ c.nombre_url }}" class="waves-effect waves-light">
-                    <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">{{ c.nombre }}
+                    <img ng-src="https://martinamodas.com/catalogo/{{ c.id }}/config/icono.png">{{ c.nombre }}
                 </a>
             </li>
             <li>

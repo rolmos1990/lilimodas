@@ -14,7 +14,7 @@
                 scope.producto.imagen.forEach(function(imagen, index, array) {
                     if(imagen*1 > 0){
                         var a = $('<a>').addClass('carousel-item').attr('href','#');
-                        var img = $('<img>').attr('src','http://martinamodas.com/catalogo/'+ scope.producto.id_categoria + '/' + scope.producto.codigo + '_' + (index+1) + '_400.jpg');
+                        var img = $('<img>').attr('src','https://martinamodas.com/catalogo/'+ scope.producto.id_categoria + '/' + scope.producto.codigo + '_' + (index+1) + '_400.jpg');
                         a.append(img);
                         carousel.append(a);
                     }

@@ -12,10 +12,10 @@
         <div class="categoria" ng-repeat="c in categorias.lista">
             <h4>{{ c.nombre }}</h4>
             <div class="encabezado">
-                <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/encabezado.jpg?{{ c.actualizacion }}">
+                <img ng-src="https://martinamodas.com/catalogo/{{ c.id }}/config/encabezado.jpg?{{ c.actualizacion }}">
             </div>
             <div class="portada">
-                <img ng-src="http://martinamodas.com/catalogo/{{ c.id }}/config/portada.jpg?{{ c.actualizacion }}">
+                <img ng-src="https://martinamodas.com/catalogo/{{ c.id }}/config/portada.jpg?{{ c.actualizacion }}">
             </div><!--
             --><div class="opciones">
                 <input type="file" id="encabezado{{ c.id }}" ngf-select="categorias.subir('encabezado',c.id,$file)" ngf-accept="'image/jpeg'">
@@ -35,10 +35,10 @@
         <div class="categoria">
             <h4>Compras al Mayor</h4>
             <div class="encabezado">
-                <img ng-src=http://martinamodas.com/catalogo/mayor/config/encabezado.jpg?{{ categorias.fechaActual }}">
+                <img ng-src=https://martinamodas.com/catalogo/mayor/config/encabezado.jpg?{{ categorias.fechaActual }}">
             </div>
             <div class="portada">
-                <img ng-src="http://martinamodas.com/catalogo/mayor/config/portada.jpg?{{ categorias.fechaActual }}">
+                <img ng-src="https://martinamodas.com/catalogo/mayor/config/portada.jpg?{{ categorias.fechaActual }}">
             </div><!--
             --><div class="opciones">
                 <input type="file" id="encabezadomayor" ngf-select="categorias.subir('encabezado','mayor',$file)" ngf-accept="'image/jpeg'">

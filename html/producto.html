@@ -14,10 +14,10 @@
         <div class="col s12 m6">
             <div class="imagenes">
                 <div class="sgrande">
-                    <img id="zoom-img" ng-src="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_400.jpg" width="100%" data-zoom="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_800.jpg" drift>
+                    <img id="zoom-img" ng-src="https://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_400.jpg" width="100%" data-zoom="https://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ producto.imagen }}_800.jpg" drift>
                 </div>
                 <div class="mini">
-                    <img ng-src="http://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ $index+1 }}_67.jpg"
+                    <img ng-src="https://martinamodas.com/catalogo/{{ producto.data.id_categoria }}/{{ producto.data.codigo }}_{{ $index+1 }}_67.jpg"
                         width="30"
                         ng-repeat="i in producto.data.imagen track by $index"
                         ng-if="i"
